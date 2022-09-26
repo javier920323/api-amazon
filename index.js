@@ -5,10 +5,12 @@ const stripe = require('stripe')(process.env.STRIPE_CLIENT_SECRET)
 
 const port = process.env.PORT || 4242;
 
-const app = express()
+const app = express();
 
-app.use(express.json())
-app.use(cors())
+app.use(cors({ origin: true }));
+app.use(express.json());
+
+app.listen(port)
 
 // se resive por la url el (total) apagar enviado desde el frontend por axio en la funcion getClientSecret
 app.post('/payment/create', async (req, res) => {
@@ -27,5 +29,3 @@ app.post('/payment/create', async (req, res) => {
   })
 
 })
-
-app.listen(port)
