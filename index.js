@@ -12,7 +12,6 @@ app.use(cors())
 
 // se resive por la url el (total) apagar enviado desde el frontend por axio en la funcion getClientSecret
 app.post('/payment/create', async (req, res) => {
-	res.setHeader('Access-Control-Allow-Origin', '*')
   // se guarda en 'total' lo que se solicitud('req') mediante a la url con el query en este caso el total a pagar
   const total = req.query.total;
   console.log('BOOM', total)
