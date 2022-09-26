@@ -1,0 +1,30 @@
+{
+  "name": "curso-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx nodemon"
+  },
+  "author": "javiersm",
+  "license": "ISC",
+  "description": "curso para saber las bases",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javier920323/Curso.git"
+  },
+  "bugs": {
+    "url": "https://github.com/javier920323/Curso/issues"
+  },
+  "homepage": "https://github.com/javier920323/Curso#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "stripe": "^10.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
