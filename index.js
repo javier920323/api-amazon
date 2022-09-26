@@ -7,8 +7,8 @@ const port = process.env.PORT || 4242;
 
 const app = express();
 
-app.use(cors({ origin: true }));
 app.use(express.json());
+app.use(cors())
 
 app.listen(port)
 
